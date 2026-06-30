@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSV Volleyball Neutraubling</title>
+    <link rel="icon" href="https://volleyball-neutraubling.de/wp-content/uploads/2022/10/cropped-tsv_logo-32x32.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="https://volleyball-neutraubling.de/wp-content/uploads/2022/10/cropped-Logo-TSV-Neutraubling@2x.png" alt="TSV Volleyball Neutraubling" class="header__logo-img">
+                    <div class="header__logo-text">
+                        <span class="header__logo-title">TSV Volleyball</span>
+                        <span class="header__logo-subtitle">Neutraubling</span>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="nav" id="nav">
+                <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li class="nav__item nav__item--has-dropdown">
+                        <a href="mannschaften.html" class="nav__link">Mannschaften <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="damen-1.html">Damen 1</a></li>
+                            <li><a href="damen-2.html">Damen 2</a></li>
+                            <li><a href="damen-3.html">Damen 3</a></li>
+                            <li><a href="damen-4.html">Damen 4</a></li>
+                            <li><a href="herren-1.html">Herren 1</a></li>
+                            <li><a href="freizeit-mixed-1.html">Freizeit-Mixed I.</a></li>
+                            <li><a href="freizeit-mixed-2.html">Freizeit-Mixed II.</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item--has-dropdown">
+                        <a href="jugend.html" class="nav__link">Jugend <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="jugend.html#u13">U13 & jünger</a></li>
+                            <li><a href="jugend.html#u14">U14</a></li>
+                            <li><a href="jugend.html#u16">U16</a></li>
+                            <li><a href="jugend.html#u20">U20/U18</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="training.html" class="nav__link">Training</a></li>
+                    <li class="nav__item"><a href="turniere.html" class="nav__link">Turniere</a></li>
+                    <li class="nav__item"><a href="anfahrt.html" class="nav__link">Anfahrt</a></li>
+                    <li class="nav__item"><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+                    <li class="nav__item"><a href="sponsoren.html" class="nav__link">Sponsoren</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__social">
+                <a href="https://www.facebook.com/volleyballneutraubling" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__slider">
+            <div class="hero__slide active" style="background-image: url('https://volleyball-neutraubling.de/wp-content/uploads/2025/04/Mannschaft_2025.jpg');">
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <h2 class="hero__title">Damen 1</h2>
+                    <p class="hero__text">Regionalliga – Die Damen 1 bestreiten in der Saison 2025/2026 ihre erste Saison in der Regionalliga.</p>
+                    <a href="#" class="btn btn--primary">Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="hero__slide" style="background-image: url('https://volleyball-neutraubling.de/wp-content/uploads/2025/04/Training_2025.jpg');">
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <h2 class="hero__title">Training</h2>
+                    <p class="hero__text">Unsere Trainingszeiten auf einen Blick – Damen 1, Damen 2, Jugend und Freizeit-Mixed.</p>
+                    <a href="#" class="btn btn--primary">Zu den Trainingszeiten</a>
+                </div>
+            </div>
+            <div class="hero__slide" style="background-image: url('https://volleyball-neutraubling.de/wp-content/uploads/2025/04/Freizeit_2025.jpg');">
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <h2 class="hero__title">Freizeit-Mixed I.</h2>
+                    <p class="hero__text">2. Liga-Mixed – Unsere Mixed-Volleyballer treffen sich jeden Donnerstag zum gemeinsamen Training.</p>
+                    <a href="#" class="btn btn--primary">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__controls">
+            <button class="hero__btn hero__btn--prev" aria-label="Vorheriges Bild"><i class="fas fa-chevron-left"></i></button>
+            <div class="hero__dots"></div>
+            <button class="hero__btn hero__btn--next" aria-label="Nächstes Bild"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ===== NEWS SECTION ===== -->
+    <section class="section news">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Aktuelle <span>News</span></h2>
+                <p class="section__subtitle">Das Neueste aus der Abteilung</p>
+            </div>
+            <div class="news__grid">
+                <article class="news__card">
+                    <div class="news__date">08. Juni 2026</div>
+                    <h3 class="news__title">Turnieranmeldungen 2026</h3>
+                    <p class="news__excerpt">Alle Infos zu den anstehenden Turnieren und Anmeldemodalitäten.</p>
+                    <a href="#" class="news__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">08. Mai 2026</div>
+                    <h3 class="news__title">Volleyballcamp 2026</h3>
+                    <p class="news__excerpt">05.-07.08.2026 für Kinder der Jahrgänge 2013 bis 2018 (Mädels und Jungs).</p>
+                    <a href="#" class="news__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">07. Mai 2026</div>
+                    <h3 class="news__title">Guggi-Pokal am 20.6.26</h3>
+                    <p class="news__excerpt">Traditionelles Turnier – wir freuen uns auf zahlreiche Teilnehmer!</p>
+                    <a href="#" class="news__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="news__card">
+                    <div class="news__date">03. März 2026</div>
+                    <h3 class="news__title">Herbstcup & Herbstturnier</h3>
+                    <p class="news__excerpt">Am 19. und 20.09.26 finden unsere beliebten Herbstturniere statt.</p>
+                    <a href="#" class="news__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAMS OVERVIEW ===== -->
+    <section class="section teams">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Unsere <span>Mannschaften</span></h2>
+                <p class="section__subtitle">Von der Regionalliga bis zur Freizeit-Mixed – für jeden ist etwas dabei</p>
+            </div>
+            <div class="teams__grid">
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-female"></i></div>
+                    <h3 class="team-card__title">Damen 1</h3>
+                    <span class="team-card__league">Regionalliga</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-female"></i></div>
+                    <h3 class="team-card__title">Damen 2</h3>
+                    <span class="team-card__league">Bezirksliga</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-female"></i></div>
+                    <h3 class="team-card__title">Damen 3</h3>
+                    <span class="team-card__league">Kreisliga</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-female"></i></div>
+                    <h3 class="team-card__title">Damen 4</h3>
+                    <span class="team-card__league">Kreisklasse</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-male"></i></div>
+                    <h3 class="team-card__title">Herren 1</h3>
+                    <span class="team-card__league">Bezirksliga</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-people-arrows"></i></div>
+                    <h3 class="team-card__title">Freizeit-Mixed I.</h3>
+                    <span class="team-card__league">2. Liga-Mixed</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__icon"><i class="fas fa-people-arrows"></i></div>
+                    <h3 class="team-card__title">Freizeit-Mixed II.</h3>
+                    <span class="team-card__league">Freizeitliga</span>
+                    <a href="#" class="team-card__link">Zum Team <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="team-card team-card--highlight">
+                    <div class="team-card__icon"><i class="fas fa-child"></i></div>
+                    <h3 class="team-card__title">Jugend</h3>
+                    <span class="team-card__league">U13 · U14 · U16 · U20/U18</span>
+                    <a href="#" class="team-card__link">Zur Jugend <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPONSORS SECTION ===== -->
+    <section class="section sponsors">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Unsere <span>Sponsoren</span></h2>
+                <p class="section__subtitle">Ein herzliches Dankeschön an unsere Unterstützer</p>
+            </div>
+            <div class="sponsors__slider" id="sponsorsSlider">
+                <div class="sponsors__track" id="sponsorsTrack">
+                    <div class="sponsor-item">
+                        <a href="https://www.duennes.de/" target="_blank">
+                            <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/11/Duennes_150.jpg" alt="Autohaus Dünnes">
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <a href="https://www.kueche-co.de/neutraubling" target="_blank">
+                            <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/04/logo_kueche_co-1.jpg" alt="Küche & Co">
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <a href="https://www.erwin-kirchhammer.de/" target="_blank">
+                            <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/04/logo_erwein_kirchhammer-1.jpg" alt="Erwin Kirchhammer">
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <a href="http://www.haidcafe-neutraubling.de" target="_blank">
+                            <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/09/Haidcafe_150.jpg" alt="Haidcafe">
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <a href="https://www.reisebuero-stadler.de/" target="_blank">
+                            <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/09/Reisebuero-Stadler-Logo_150.jpg" alt="Reisebüro Stadler">
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <a href="https://optik-melcher.de/" target="_blank">
+                            <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/09/Optik-Melcher_Logo_150.jpg" alt="Optik Melcher">
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/09/primosport_shoplogo_150.jpg" alt="Primosport">
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="https://volleyball-neutraubling.de/wp-content/uploads/2025/09/Lausser-GmbH_logo_150.jpg" alt="Lausser GmbH">
+                    </div>
+                </div>
+            </div>
+            <div class="sponsors__cta">
+                <p>Auch Interesse, uns zu unterstützen?</p>
+                <a href="#" class="btn btn--outline">Sponsor werden</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAMP SECTION ===== -->
+    <section class="section camp">
+        <div class="container">
+            <div class="camp__inner">
+                <div class="camp__image">
+                    <img src="https://volleyball-neutraubling.de/wp-content/uploads/2026/06/Flyer-Camp-mit-Code-828x1024.jpg" alt="Volleyball-Sommer-Camp 2026">
+                </div>
+                <div class="camp__content">
+                    <h2 class="camp__title">Volleyball-Sommer-Camp 2026</h2>
+                    <p class="camp__date"><i class="fas fa-calendar-alt"></i> 05. – 07. August 2026</p>
+                    <p class="camp__desc">Für Kinder der Jahrgänge 2013 bis 2018 (Mädels und Jungs).</p>
+                    <ul class="camp__features">
+                        <li><i class="fas fa-check-circle"></i> Professionelles Training</li>
+                        <li><i class="fas fa-check-circle"></i> Spaß & Teamgeist</li>
+                        <li><i class="fas fa-check-circle"></i> Für Anfänger & Fortgeschrittene</li>
+                    </ul>
+                    <a href="#" class="btn btn--primary">Jetzt anmelden</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPIELPLAN SECTION ===== -->
+    <section class="section schedule">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Spielplan <span>2025/26</span></h2>
+                <p class="section__subtitle">Alle Spiele unserer Teams auf einen Blick</p>
+            </div>
+            <div class="schedule__embed">
+                <a href="https://volleyball-neutraubling.de/index.php/2022/10/13/spielplan/" class="schedule__card">
+                    <div class="schedule__icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Spielplan all unserer Teams</h3>
+                    <p>Saison 2025/26 – Alle Termine, Orte und Ergebnisse</p>
+                    <span class="btn btn--small">Zum Spielplan <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta__inner">
+                <h2 class="cta__title">Lust, dabei zu sein?</h2>
+                <p class="cta__text">Wir suchen immer neue Mitglieder – ob jung oder alt, Anfänger oder Profi. Komm vorbei und probier's aus!</p>
+                <div class="cta__buttons">
+                    <a href="#" class="btn btn--primary btn--large">Kontakt aufnehmen</a>
+                    <a href="#" class="btn btn--outline btn--large">Trainingszeiten</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title">Kontakt</h3>
+                    <ul class="footer__list">
+                        <li><i class="fas fa-map-marker-alt"></i> Altvaterstraße 9, 93073 Neutraubling</li>
+                        <li><i class="fas fa-phone"></i> 0160/2480482</li>
+                        <li><i class="fas fa-envelope"></i> MoMarchner@t-online.de</li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Sponsoring</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">Unsere Sponsoren</a></li>
+                        <li><a href="https://volleyball-neutraubling.de/wp-content/uploads/2022/10/Sponsorenmappe-final-fast-.pdf" target="_blank">Sponsorenmappe (PDF)</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Quicklinks</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Anfahrt</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3 class="footer__title">Rechtliches</h3>
+                    <ul class="footer__list">
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutzerklärung</a></li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/volleyballneutraubling" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 TSV Volleyball Neutraubling</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

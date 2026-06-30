@@ -1,0 +1,311 @@
+/* ============================================
+   TEAM PAGES - Specific Styles
+   ============================================ */
+
+/* ----- TEAM HERO ----- */
+.team-hero {
+    position: relative;
+    height: 450px;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.team-hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(26, 26, 46, 0.3) 0%,
+        rgba(26, 26, 46, 0.85) 100%
+    );
+}
+
+.team-hero__content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 0 60px;
+    color: var(--white);
+    width: 100%;
+}
+
+.team-hero__badge {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.team-hero__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.team-hero__meta {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.team-hero__meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.team-hero__meta i {
+    color: var(--primary);
+}
+
+/* ----- TEAM CONTENT ----- */
+.team-content {
+    padding-top: 60px;
+}
+
+.team-content__grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 48px;
+    align-items: start;
+}
+
+.team-content__main h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.team-content__main p {
+    color: var(--gray-700);
+    margin-bottom: 16px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.team-content__links {
+    display: flex;
+    gap: 12px;
+    margin: 28px 0;
+    flex-wrap: wrap;
+}
+
+/* ----- TEAM SCHEDULE ----- */
+.team-schedule {
+    margin-top: 40px;
+    padding: 32px;
+    background: var(--gray-100);
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+}
+
+.team-schedule h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    color: var(--dark);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-schedule h3 i {
+    color: var(--primary);
+}
+
+.team-schedule__api {
+    min-height: 100px;
+}
+
+/* ----- TEAM INFO CARDS (Sidebar) ----- */
+.team-info-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    margin-bottom: 20px;
+}
+
+.team-info-card__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.team-info-card__title i {
+    color: var(--primary);
+}
+
+.team-info-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.team-info-card__item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.team-info-card__item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.team-info-card__label {
+    font-size: 0.8rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.team-info-card__item span:not(.team-info-card__label) {
+    font-size: 0.95rem;
+    color: var(--gray-800);
+}
+
+.team-info-card__item a {
+    color: var(--primary);
+    font-size: 0.95rem;
+}
+
+.team-info-card__item a:hover {
+    text-decoration: underline;
+}
+
+.team-info-card__location {
+    font-size: 0.85rem !important;
+    color: var(--gray-500) !important;
+}
+
+.team-info-card__highlight {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+}
+
+/* ----- TEAM GALLERY ----- */
+.team-gallery {
+    background: var(--gray-100);
+}
+
+.team-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.team-gallery__item {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    display: block;
+}
+
+.team-gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-gallery__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(195, 0, 7, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.team-gallery__item:hover img {
+    transform: scale(1.05);
+}
+
+.team-gallery__item:hover .team-gallery__overlay {
+    opacity: 1;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+    .team-content__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-content__sidebar {
+        order: -1;
+    }
+
+    .team-info-card {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-hero {
+        height: 350px;
+        min-height: 350px;
+    }
+
+    .team-hero__title {
+        font-size: 2.2rem;
+    }
+
+    .team-hero__meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .team-gallery__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-gallery__grid {
+        grid-template-columns: 1fr;
+    }
+}
