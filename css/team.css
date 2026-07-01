@@ -144,6 +144,35 @@
     min-height: 100px;
 }
 
+.team-schedule__iframe {
+    width: 100%;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    background: var(--surface-card);
+}
+
+.team-schedule__iframe iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+}
+
+.team-schedule__fallback-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.team-schedule__fallback-link:hover {
+    text-decoration: underline;
+}
+
 /* ----- TEAM INFO CARDS (Sidebar) ----- */
 .team-info-card {
     background: var(--dark);
@@ -337,6 +366,10 @@
 
     .team-gallery__grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .team-schedule__iframe iframe {
+        height: 450px;
     }
 }
 
