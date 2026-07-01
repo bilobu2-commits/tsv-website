@@ -11,6 +11,7 @@
     align-items: flex-end;
     margin-top: 70px;
     overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 32px), 0 100%);
 }
 
 .team-hero__bg {
@@ -33,7 +34,7 @@
 .team-hero__content {
     position: relative;
     z-index: 2;
-    padding: 40px 0 60px;
+    padding: 40px 0 68px;
     color: var(--white);
     width: 100%;
 }
@@ -53,11 +54,13 @@
 
 .team-hero__title {
     font-family: 'Oswald', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 12px;
-    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    letter-spacing: -1.5px;
+    line-height: 0.95;
 }
 
 .team-hero__meta {
@@ -92,10 +95,12 @@
 
 .team-content__main h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: 800;
     color: var(--dark);
     margin-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: -0.5px;
 }
 
 .team-content__main p {
@@ -288,6 +293,7 @@
     .team-hero {
         height: 350px;
         min-height: 350px;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), 0 100%);
     }
 
     .team-hero__title {
