@@ -97,14 +97,14 @@
     font-family: 'Oswald', sans-serif;
     font-size: 2.2rem;
     font-weight: 800;
-    color: var(--dark);
+    color: var(--text-heading);
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: -0.5px;
 }
 
 .team-content__main p {
-    color: var(--gray-700);
+    color: var(--text-body);
     margin-bottom: 16px;
     line-height: 1.8;
     font-size: 1.05rem;
@@ -121,15 +121,15 @@
 .team-schedule {
     margin-top: 40px;
     padding: 32px;
-    background: var(--gray-100);
+    background: var(--surface-alt);
     border-radius: var(--radius);
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--border-subtle);
 }
 
 .team-schedule h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 1.4rem;
-    color: var(--dark);
+    color: var(--text-heading);
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -146,11 +146,11 @@
 
 /* ----- TEAM INFO CARDS (Sidebar) ----- */
 .team-info-card {
-    background: var(--white);
+    background: var(--dark);
     border-radius: var(--radius);
     padding: 24px;
     box-shadow: var(--shadow-sm);
-    border: 1px solid var(--gray-200);
+    border: 1px solid rgba(255,255,255,0.08);
     margin-bottom: 20px;
 }
 
@@ -158,11 +158,11 @@
     font-family: 'Oswald', sans-serif;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--white);
     text-transform: uppercase;
     margin-bottom: 16px;
     padding-bottom: 12px;
-    border-bottom: 2px solid var(--gray-200);
+    border-bottom: 2px solid rgba(255,255,255,0.1);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -183,7 +183,7 @@
     flex-direction: column;
     gap: 2px;
     padding-bottom: 12px;
-    border-bottom: 1px solid var(--gray-100);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .team-info-card__item:last-child {
@@ -201,11 +201,11 @@
 
 .team-info-card__item span:not(.team-info-card__label) {
     font-size: 0.95rem;
-    color: var(--gray-800);
+    color: var(--gray-300);
 }
 
 .team-info-card__item a {
-    color: var(--primary);
+    color: var(--neon);
     font-size: 0.95rem;
 }
 
@@ -226,7 +226,15 @@
 
 /* ----- TEAM VIDEO ----- */
 .team-video {
-    background: var(--gray-100);
+    background: var(--dark-light);
+}
+
+.team-video .section__title {
+    color: var(--white);
+}
+
+.team-video .section__subtitle {
+    color: var(--gray-400);
 }
 
 .team-video__wrapper {
@@ -248,7 +256,7 @@
 
 /* ----- TEAM GALLERY ----- */
 .team-gallery {
-    background: var(--gray-100);
+    background: var(--surface-alt);
 }
 
 .team-gallery__grid {

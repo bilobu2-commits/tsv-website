@@ -3,10 +3,47 @@
  * Slider, Navigation, Header-Effekte
  */
 
+// Theme so früh wie möglich anwenden (vor DOMContentLoaded), um Flackern zu minimieren
+if (localStorage.getItem('tsv-theme') === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // ========================================
-    // 1. HEADER SCROLL EFFECT
+    // 1. DARK MODE TOGGLE
+    // ========================================
+    const root = document.documentElement;
+    const themeToggle = document.createElement('button');
+    themeToggle.className = 'theme-toggle';
+    themeToggle.type = 'button';
+    themeToggle.setAttribute('aria-label', 'Dark Mode umschalten');
+
+    function updateToggleIcon() {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    }
+    updateToggleIcon();
+
+    themeToggle.addEventListener('click', () => {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+            root.removeAttribute('data-theme');
+            localStorage.setItem('tsv-theme', 'light');
+        } else {
+            root.setAttribute('data-theme', 'dark');
+            localStorage.setItem('tsv-theme', 'dark');
+        }
+        updateToggleIcon();
+    });
+
+    const headerSocial = document.querySelector('.header__social');
+    if (headerSocial) {
+        headerSocial.prepend(themeToggle);
+    }
+
+    // ========================================
+    // 2. HEADER SCROLL EFFECT
     // ========================================
     const header = document.getElementById('header');
     let lastScroll = 0;
@@ -22,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
-    // 2. MOBILE NAV TOGGLE
+    // 3. MOBILE NAV TOGGLE
     // ========================================
     const navToggle = document.getElementById('navToggle');
     const navList = document.getElementById('navList');
@@ -52,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
-    // 3. SPONSORS SLIDER (Duplizieren für Endlos-Loop)
+    // 4. SPONSORS SLIDER (Duplizieren für Endlos-Loop)
     // ========================================
     const sponsorsTrack = document.getElementById('sponsorsTrack');
     
@@ -66,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ========================================
-    // 4. SMOOTH ANCHOR SCROLLING
+    // 5. SMOOTH ANCHOR SCROLLING
     // ========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -85,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
-    // 5. INTERSECTION OBSERVER (für Animationen)
+    // 6. INTERSECTION OBSERVER (für Animationen)
     // ========================================
     const observerOptions = {
         threshold: 0.1,
