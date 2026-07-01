@@ -52,74 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
-    // 3. HERO SLIDER
-    // ========================================
-    const slides = document.querySelectorAll('.hero__slide');
-    const dotsContainer = document.querySelector('.hero__dots');
-    const prevBtn = document.querySelector('.hero__btn--prev');
-    const nextBtn = document.querySelector('.hero__btn--next');
-    let currentSlide = 0;
-    let slideInterval;
-
-    // Create dots
-    slides.forEach((_, index) => {
-        const dot = document.createElement('span');
-        dot.addEventListener('click', () => goToSlide(index));
-        dotsContainer.appendChild(dot);
-    });
-
-    const dots = dotsContainer.querySelectorAll('span');
-
-    function goToSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        currentSlide = index;
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-    }
-
-    function nextSlide() {
-        goToSlide((currentSlide + 1) % slides.length);
-    }
-
-    function prevSlide() {
-        goToSlide((currentSlide - 1 + slides.length) % slides.length);
-    }
-
-    function startSlider() {
-        stopSlider();
-        slideInterval = setInterval(nextSlide, 6000);
-    }
-
-    function stopSlider() {
-        if (slideInterval) {
-            clearInterval(slideInterval);
-        }
-    }
-
-    // Event listeners
-    prevBtn.addEventListener('click', () => {
-        prevSlide();
-        startSlider(); // restart interval
-    });
-
-    nextBtn.addEventListener('click', () => {
-        nextSlide();
-        startSlider(); // restart interval
-    });
-
-    // Pause on hover
-    const hero = document.getElementById('hero');
-    hero.addEventListener('mouseenter', stopSlider);
-    hero.addEventListener('mouseleave', startSlider);
-
-    // Init
-    goToSlide(0);
-    startSlider();
-
-    // ========================================
-    // 4. SPONSORS SLIDER (Duplizieren für Endlos-Loop)
+    // 3. SPONSORS SLIDER (Duplizieren für Endlos-Loop)
     // ========================================
     const sponsorsTrack = document.getElementById('sponsorsTrack');
     
@@ -133,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ========================================
-    // 5. SMOOTH ANCHOR SCROLLING
+    // 4. SMOOTH ANCHOR SCROLLING
     // ========================================
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -152,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
-    // 6. INTERSECTION OBSERVER (für Animationen)
+    // 5. INTERSECTION OBSERVER (für Animationen)
     // ========================================
     const observerOptions = {
         threshold: 0.1,
