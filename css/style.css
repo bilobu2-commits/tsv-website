@@ -280,6 +280,11 @@ img {
     background: rgba(255,255,255,0.08);
 }
 
+.nav__link.active {
+    color: var(--white);
+    background: rgba(255,255,255,0.1);
+}
+
 .nav__link i {
     font-size: 0.65rem;
 }
@@ -296,7 +301,9 @@ img {
     background: var(--dark-light);
     border-radius: var(--radius);
     padding: 8px;
-    min-width: 200px;
+    min-width: 230px;
+    max-height: 80vh;
+    overflow-y: auto;
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
@@ -323,6 +330,28 @@ img {
 .nav__dropdown li a:hover {
     background: var(--primary);
     color: var(--white);
+}
+
+.nav__dropdown li a.active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.nav__dropdown-label {
+    padding: 12px 16px 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gray-500);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 6px;
+}
+
+.nav__dropdown li:first-child.nav__dropdown-label {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 4px;
 }
 
 /* Nav Toggle (Mobile) */
@@ -1490,6 +1519,9 @@ img {
         background: rgba(255,255,255,0.04);
         margin-top: 4px;
         display: none;
+        max-height: none;
+        overflow-y: visible;
+        min-width: 0;
     }
 
     .nav__item--has-dropdown.open .nav__dropdown {
@@ -1566,8 +1598,23 @@ img {
         padding: 0 16px;
     }
 
+    .hero {
+        min-height: 420px;
+        max-height: 560px;
+    }
+
     .hero__title {
         font-size: 1.8rem;
+    }
+
+    .hero__content {
+        left: 5%;
+        width: 90%;
+    }
+
+    .nav__dropdown li a {
+        padding: 12px 16px;
+        font-size: 0.9rem;
     }
 
     .news__grid {
