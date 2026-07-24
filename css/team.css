@@ -96,10 +96,10 @@
 .team-content__sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .team-content__sidebar .team-info-card:last-child {
-    margin-top: auto;
     margin-bottom: 0;
 }
 
