@@ -1,0 +1,33 @@
+name: Herren-1-Tabelle aktualisieren
+
+on:
+  schedule:
+    # täglich 05:00 und 17:00 UTC (06:00/07:00 und 18:00/19:00 MEZ/MESZ)
+    - cron: '0 5,17 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-tabelle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Tabelle von volleyball.bayern abrufen
+        run: node scripts/update-herren-1-tabelle.js
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/herren-1-tabelle.json
+          git diff --cached --quiet || git commit -m "Herren-1-Tabelle automatisch aktualisiert"
+          git push

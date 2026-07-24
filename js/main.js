@@ -162,5 +162,50 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // ========================================
+    // 7. HERREN 1 - LIVE TABELLE
+    // ========================================
+    const tabelleBody = document.querySelector('#herren-1-tabelle tbody');
+    const tabelleStatus = document.getElementById('herren-1-tabelle-status');
+
+    if (tabelleBody) {
+        const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+
+        fetch('data/herren-1-tabelle.json', { cache: 'no-store' })
+            .then((res) => {
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                return res.json();
+            })
+            .then((data) => {
+                if (!data.rows || !data.rows.length) throw new Error('Keine Daten');
+
+                tabelleBody.innerHTML = data.rows.map((row) => `
+                    <tr class="${row.isOwnTeam ? 'league-table__row--own' : ''}">
+                        <td>${escapeHtml(row.rank)}</td>
+                        <td>${escapeHtml(row.team)}</td>
+                        <td>${escapeHtml(row.played)}</td>
+                        <td>${escapeHtml(row.won)}</td>
+                        <td>${escapeHtml(row.lost)}</td>
+                        <td><strong>${escapeHtml(row.points)}</strong></td>
+                        <td>${escapeHtml(row.setsRatio)}</td>
+                        <td>${escapeHtml(row.ballsRatio)}</td>
+                    </tr>
+                `).join('');
+
+                if (tabelleStatus) {
+                    const updated = new Date(data.updatedAt);
+                    const datum = updated.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                    const uhrzeit = updated.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+                    tabelleStatus.textContent = `Stand: ${datum}, ${uhrzeit} Uhr`;
+                }
+            })
+            .catch(() => {
+                tabelleBody.innerHTML = '<tr><td colspan="8" class="league-table__empty">Tabelle konnte nicht geladen werden.</td></tr>';
+                if (tabelleStatus) tabelleStatus.textContent = 'Aktuelle Tabelle direkt auf volleyball.bayern:';
+            });
+    }
+
     console.log('🏐 TSV Volleyball Neutraubling - Seite geladen ✅');
 });

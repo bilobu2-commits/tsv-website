@@ -105,7 +105,7 @@
         </div>
         <div class="team-hero__content">
             <div class="container">
-                <span class="team-hero__badge">Kreisklasse</span>
+                <span class="team-hero__badge">Kreisliga</span>
                 <h1 class="team-hero__title">Herren 1</h1>
                 <div class="team-hero__meta">
                     <span><i class="fas fa-calendar-alt"></i> Training: Di & Do 20:00 – 22:00</span>
@@ -120,7 +120,7 @@
             <div class="team-content__grid">
                 <div class="team-content__main">
                     <h2>Über die Mannschaft</h2>
-                    <p>Die Herren 1 des TSV Neutraubling sind in der Kreisklasse zuhause. Das Team ist jung, ergänzt sich aber durch die Erfahrung einiger langjähriger Spieler zu einer starken Mischung.</p>
+                    <p>Die Herren 1 des TSV Neutraubling sind in der Kreisliga zuhause. Das Team ist jung, ergänzt sich aber durch die Erfahrung einiger langjähriger Spieler zu einer starken Mischung.</p>
                     <p>Nach einer erfolgreich bestrittenen ersten Saison greifen wir mit neuem Elan und viel Motivation in die Saison 2026/2027 an. Neue Spieler sind herzlich willkommen und können jederzeit zu einem Probetraining vorbeischauen!</p>
 
                     <!-- Bilder -->
@@ -142,7 +142,7 @@
                         <div class="team-info-card__list">
                             <div class="team-info-card__item">
                                 <span class="team-info-card__label">Spielklasse:</span>
-                                <span class="team-info-card__highlight">Kreisklasse</span>
+                                <span class="team-info-card__highlight">Kreisliga</span>
                             </div>
                             <div class="team-info-card__item">
                                 <span class="team-info-card__label">Saison:</span>
@@ -171,17 +171,32 @@
         </div>
     </section>
 
-    <section class="section team-video">
+    <section class="section team-table">
         <div class="container">
             <div class="section__header">
-                <h2 class="section__title">Herren 1 <span>in Aktion</span></h2>
-                <p class="section__subtitle">Ein Eindruck aus Training und Spiel</p>
+                <h2 class="section__title">Tabelle <span>Kreisliga</span></h2>
+                <p class="section__subtitle" id="herren-1-tabelle-status">Tabelle wird geladen …</p>
             </div>
-            <div class="team-video__wrapper">
-                <video controls muted loop playsinline poster="images/hero-mannschaft.jpg">
-                    <source src="videos/herren-hochformat.mp4" type="video/mp4">
-                </video>
+            <div class="league-table__scroll">
+                <table class="league-table" id="herren-1-tabelle">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Team</th>
+                            <th scope="col">Sp.</th>
+                            <th scope="col">S</th>
+                            <th scope="col">N</th>
+                            <th scope="col">Pkt.</th>
+                            <th scope="col">Sätze</th>
+                            <th scope="col">Bälle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="8" class="league-table__empty">Tabelle wird geladen …</td></tr>
+                    </tbody>
+                </table>
             </div>
+            <a href="https://volleyball.bayern/ergebnisse/erwachsene/oberpfalz/wettbewerb-38740" target="_blank" class="team-schedule__fallback-link">Tabelle auf volleyball.bayern ansehen <i class="fas fa-arrow-up-right-from-square"></i></a>
         </div>
     </section>
 
