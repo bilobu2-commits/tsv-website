@@ -88,6 +88,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Teams-Dropdown: Damen/Herren/Mixed & Freizeit/Jugend per Klick auf- und zuklappen
+    document.querySelectorAll('.nav__dropdown-toggle').forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggle.parentElement.classList.toggle('open');
+        });
+    });
+
+    // Trainingszeiten-Akkordeon: Damen/Herren/Mixed & Freizeit/Jugend per Klick auf- und zuklappen
+    document.querySelectorAll('.training-accordion__toggle').forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            toggle.closest('.training-accordion__item').classList.toggle('open');
+        });
+    });
+
     // ========================================
     // 4. SPONSORS SLIDER (Duplizieren für Endlos-Loop)
     // ========================================

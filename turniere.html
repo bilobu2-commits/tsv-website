@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turniere – TSV Volleyball Neutraubling</title>
+    <title>Events – TSV Volleyball Neutraubling</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,36 +33,60 @@
                         <a href="mannschaften.html" class="nav__link">Teams <i class="fas fa-chevron-down"></i></a>
                         <ul class="nav__dropdown">
                             <li><a href="mannschaften.html">Alle Mannschaften</a></li>
-                            <li><a href="damen-1.html">Damen 1</a></li>
-                            <li><a href="damen-2.html">Damen 2</a></li>
-                            <li><a href="damen-3.html">Damen 3</a></li>
-                            <li><a href="damen-4.html">Damen 4</a></li>
-                            <li><a href="herren-1.html">Herren 1</a></li>
-                            <li><a href="freizeit-mixed-1.html">Freizeit-Mixed I.</a></li>
-                            <li><a href="freizeit-mixed-2.html">Freizeit-Mixed II.</a></li>
-                            <li class="nav__dropdown-label">Jugend</li>
-                            <li><a href="jugend.html">Jugend Übersicht</a></li>
-                            <li><a href="u13.html">U13 & jünger</a></li>
-                            <li><a href="u14.html">U14</a></li>
-                            <li><a href="u16.html">U16</a></li>
-                            <li><a href="u20.html">U20/U18</a></li>
+                            <li class="nav__dropdown-group">
+                                <button type="button" class="nav__dropdown-toggle">Damen <i class="fas fa-chevron-down"></i></button>
+                                <ul class="nav__dropdown-sub">
+                                    <li><a href="damen-1.html">Damen 1</a></li>
+                                    <li><a href="damen-2.html">Damen 2</a></li>
+                                    <li><a href="damen-3.html">Damen 3</a></li>
+                                    <li><a href="damen-4.html">Damen 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__dropdown-group">
+                                <button type="button" class="nav__dropdown-toggle">Herren <i class="fas fa-chevron-down"></i></button>
+                                <ul class="nav__dropdown-sub">
+                                    <li><a href="herren-1.html">Herren 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__dropdown-group">
+                                <button type="button" class="nav__dropdown-toggle">Mixed &amp; Freizeit <i class="fas fa-chevron-down"></i></button>
+                                <ul class="nav__dropdown-sub">
+                                    <li><a href="freizeit-mixed-1.html">Freizeit-Mixed I.</a></li>
+                                    <li><a href="freizeit-mixed-2.html">Freizeit-Mixed II.</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__dropdown-group">
+                                <button type="button" class="nav__dropdown-toggle">Jugend <i class="fas fa-chevron-down"></i></button>
+                                <ul class="nav__dropdown-sub">
+                                    <li><a href="jugend.html">Jugend Übersicht</a></li>
+                                    <li><a href="u13.html">U13 & jünger</a></li>
+                                    <li><a href="u14.html">U14</a></li>
+                                    <li><a href="u16.html">U16</a></li>
+                                    <li><a href="u20.html">U20/U18</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav__item"><a href="training.html" class="nav__link">Training</a></li>
                     <li class="nav__item"><a href="index.html#news" class="nav__link">News</a></li>
                     <li class="nav__item"><a href="sponsoren.html" class="nav__link">Sponsoren</a></li>
                     <li class="nav__item nav__item--has-dropdown">
-                        <a href="kontakt.html" class="nav__link">Verein &amp; Kontakt <i class="fas fa-chevron-down"></i></a>
+                        <a href="turniere.html" class="nav__link">Events <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="turniere.html" class="active">Alle Events</a></li>
+                            <li><a href="sommer-camp.html">Volleyball-Sommer-Camp</a></li>
+                            <li><a href="erfolgsleiter.html">Erfolgsleiter der Jugend</a></li>
+                            <li><a href="erfolge.html">Erfolge der Abteilung</a></li>
+                            <li><a href="projekt-interreg.html">Projekt INTERREG</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item--has-dropdown">
+                        <a href="kontakt.html" class="nav__link">Verein <i class="fas fa-chevron-down"></i></a>
                         <ul class="nav__dropdown">
                             <li><a href="kontakt.html">Kontakt</a></li>
                             <li><a href="anfahrt.html">Anfahrt</a></li>
-                            <li><a href="turniere.html" class="active">Turniere</a></li>
                             <li><a href="volleyball-shop.html">Volleyball-Shop</a></li>
-                            <li><a href="sommer-camp.html">Volleyball-Sommer-Camp</a></li>
-                            <li><a href="erfolgsleiter.html">Erfolgsleiter der Jugend</a></li>
                             <li><a href="geschichte.html">Geschichte der Abteilung</a></li>
-                            <li><a href="erfolge.html">Erfolge der Abteilung</a></li>
-                            <li><a href="projekt-interreg.html">Projekt INTERREG</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -81,25 +105,62 @@
         </div>
         <div class="page-hero__content">
             <div class="container">
-                <h1 class="page-hero__title">Turniere</h1>
-                <p class="page-hero__subtitle">Unsere geplanten Turniere im Jahr 2026</p>
+                <h1 class="page-hero__title">Events</h1>
+                <p class="page-hero__subtitle">Unsere geplanten Turniere &amp; Veranstaltungen im Jahr 2026</p>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="subpage-content">
-                <p style="font-size:1.3rem; color:var(--primary); font-weight:600;">Hier unsere geplanten Turniere im Jahr 2026:</p>
+            <div class="section__header">
+                <h2 class="section__title">Geplante <span>Events</span></h2>
+                <p class="section__subtitle">Turniere &amp; Veranstaltungen im Jahr 2026</p>
+            </div>
 
-                <ul>
-                    <li><strong>11.04.2026</strong> – Osterturnier, Hobby-Mixed, Halle, mind. 2 Frauen, ab 14 Jahren</li>
-                    <li><strong>20.06.2026</strong> – Freizeit-Mixed-Turnier, 4 gegen 4; am Abend findet ein Public Viewing auf dem TSV Gelände statt, Fußball-WM, Deutschlandspiel</li>
-                    <li><strong>27.06.2026</strong> – Oberpfalzmeisterschaft U13 männlich und weiblich Beach</li>
-                    <li><strong>05.07.2026</strong> – BVV Kat. 3 Beachturnier Herren</li>
-                    <li><strong>19.09.2026</strong> – Herbstcup Kreisklasse bis Bezirksliga in 2 Leistungsklassen für Damen- und Herrenmannschaften</li>
-                    <li><strong>20.09.2026</strong> – Herbstturnier Landesliga bis Regionalliga für Damen- und Herrenmannschaften</li>
-                </ul>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-card__date"><span class="event-card__day">11</span><span class="event-card__month">April</span></div>
+                    <div class="event-card__body">
+                        <h3>Osterturnier</h3>
+                        <p>Hobby-Mixed, Halle, mind. 2 Frauen, ab 14 Jahren</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card__date"><span class="event-card__day">20</span><span class="event-card__month">Juni</span></div>
+                    <div class="event-card__body">
+                        <h3>Freizeit-Mixed-Turnier</h3>
+                        <p>4 gegen 4; am Abend Public Viewing auf dem TSV-Gelände (Fußball-WM, Deutschlandspiel)</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card__date"><span class="event-card__day">27</span><span class="event-card__month">Juni</span></div>
+                    <div class="event-card__body">
+                        <h3>Oberpfalzmeisterschaft U13 Beach</h3>
+                        <p>männlich und weiblich</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card__date"><span class="event-card__day">05</span><span class="event-card__month">Juli</span></div>
+                    <div class="event-card__body">
+                        <h3>BVV Kat. 3 Beachturnier</h3>
+                        <p>Herren</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card__date"><span class="event-card__day">19</span><span class="event-card__month">Sept.</span></div>
+                    <div class="event-card__body">
+                        <h3>Herbstcup</h3>
+                        <p>Kreisklasse bis Bezirksliga, 2 Leistungsklassen, für Damen- und Herrenmannschaften</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card__date"><span class="event-card__day">20</span><span class="event-card__month">Sept.</span></div>
+                    <div class="event-card__body">
+                        <h3>Herbstturnier</h3>
+                        <p>Landesliga bis Regionalliga, für Damen- und Herrenmannschaften</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -107,7 +168,7 @@
     <section class="section cta">
         <div class="container">
             <div class="cta__inner">
-                <h2 class="cta__title">Lust auf ein Turnier?</h2>
+                <h2 class="cta__title">Lust auf ein Event?</h2>
                 <p class="cta__text">Ob als Teilnehmer oder Zuschauer – wir freuen uns auf dich!</p>
                 <div class="cta__buttons">
                     <a href="kontakt.html" class="btn btn--primary btn--large">Kontakt aufnehmen</a>
