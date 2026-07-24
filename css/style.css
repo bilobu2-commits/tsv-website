@@ -45,12 +45,12 @@
 }
 
 html[data-theme="dark"] {
-    --surface: #12141c;
-    --surface-alt: #1a1d29;
-    --surface-card: #1e2230;
-    --text-heading: #f5f6fa;
-    --text-body: #c3c5d1;
-    --text-muted: #9698a6;
+    --surface: #0d0d0d;
+    --surface-alt: #161616;
+    --surface-card: #1c1c1c;
+    --text-heading: #ffffff;
+    --text-body: #d4d4d4;
+    --text-muted: #9a9a9a;
     --border-subtle: rgba(255,255,255,0.08);
 }
 
