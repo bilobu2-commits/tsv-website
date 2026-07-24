@@ -108,6 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ========================================
+    // 3b. HERO-VIDEO IN SLOW-MOTION
+    // ========================================
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo) {
+        heroVideo.playbackRate = 0.5;
+        heroVideo.addEventListener('loadedmetadata', () => {
+            heroVideo.playbackRate = 0.5;
+        });
+    }
+
+    // ========================================
     // 4. SPONSORS SLIDER (Duplizieren für Endlos-Loop)
     // ========================================
     const sponsorsTrack = document.getElementById('sponsorsTrack');
