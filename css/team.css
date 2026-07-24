@@ -90,7 +90,17 @@
     display: grid;
     grid-template-columns: 1fr 350px;
     gap: 48px;
-    align-items: start;
+    align-items: stretch;
+}
+
+.team-content__sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-content__sidebar .team-info-card:last-child {
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .team-content__main h2 {
@@ -318,6 +328,21 @@
 .league-table__row--own td:nth-child(2) {
     color: var(--primary);
     font-weight: 700;
+}
+
+.league-table--registrations {
+    min-width: 640px;
+}
+
+.league-table--registrations th:last-child,
+.league-table--registrations td:last-child {
+    text-align: left;
+    white-space: normal;
+    min-width: 260px;
+}
+
+.league-table--registrations td {
+    vertical-align: top;
 }
 
 .league-table__empty {
