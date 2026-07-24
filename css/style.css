@@ -1,6 +1,6 @@
-/* ============================================
+﻿/* ============================================
    TSV Volleyball Neutraubling - Modern Styles
-   Farbe: Rot (#c30007) | Akzent: Dunkel (#1a1a2e)
+   Farben: Rot (#d10107, aus dem TSV-Logo) | Weiss | Schwarz
    ============================================ */
 
 /* ----- RESET & BASE ----- */
@@ -11,13 +11,13 @@
 }
 
 :root {
-    --primary: #c30007;
-    --primary-dark: #9e0005;
-    --primary-light: #ff1a22;
-    --neon: #f5d800;
-    --neon-dark: #d4bb00;
-    --dark: #1a1a2e;
-    --dark-light: #2d2d44;
+    --primary: #d10107;
+    --primary-dark: #a30106;
+    --primary-light: #ff1f28;
+    --neon: #000000;
+    --neon-dark: #262626;
+    --dark: #000000;
+    --dark-light: #1a1a1a;
     --gray-100: #f8f9fa;
     --gray-200: #e9ecef;
     --gray-300: #dee2e6;
@@ -125,21 +125,21 @@ img {
     background: var(--primary-dark);
     border-color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(195, 0, 7, 0.35);
+    box-shadow: 0 6px 20px rgba(209, 1, 7, 0.35);
 }
 
 .btn--neon {
     background: var(--neon);
-    color: var(--dark);
+    color: var(--white);
     border-color: var(--neon);
-    box-shadow: 0 0 0 rgba(245, 216, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .btn--neon:hover {
     background: var(--neon-dark);
     border-color: var(--neon-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(245, 216, 0, 0.45);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
 }
 
 .btn--outline {
@@ -205,7 +205,7 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(26, 26, 46, 0.95);
+    background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -213,7 +213,7 @@ img {
 }
 
 .header.scrolled {
-    background: rgba(26, 26, 46, 0.98);
+    background: rgba(0, 0, 0, 0.98);
     box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
@@ -489,7 +489,7 @@ img {
 }
 
 .theme-toggle:hover {
-    color: var(--dark);
+    color: var(--white);
     background: var(--neon);
 }
 
@@ -518,9 +518,9 @@ img {
     inset: 0;
     background: linear-gradient(
         135deg,
-        rgba(26, 26, 46, 0.85) 0%,
-        rgba(26, 26, 46, 0.4) 50%,
-        rgba(195, 0, 7, 0.3) 100%
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(209, 1, 7, 0.3) 100%
     );
 }
 
@@ -780,7 +780,7 @@ img {
 .team-card:hover {
     transform: translateY(-6px);
     border-color: var(--primary);
-    box-shadow: 0 8px 30px rgba(195, 0, 7, 0.2);
+    box-shadow: 0 8px 30px rgba(209, 1, 7, 0.2);
 }
 
 .team-card:hover::after {
@@ -790,7 +790,7 @@ img {
 .team-card__icon {
     width: 56px;
     height: 56px;
-    background: rgba(195, 0, 7, 0.15);
+    background: rgba(209, 1, 7, 0.15);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -859,7 +859,7 @@ img {
 
 .team-card--highlight:hover {
     border-color: transparent;
-    box-shadow: 0 8px 30px rgba(195, 0, 7, 0.4);
+    box-shadow: 0 8px 30px rgba(209, 1, 7, 0.4);
 }
 
 /* ============================================
@@ -1075,7 +1075,7 @@ img {
 .schedule__icon {
     width: 72px;
     height: 72px;
-    background: rgba(195, 0, 7, 0.1);
+    background: rgba(209, 1, 7, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1117,7 +1117,7 @@ img {
     right: -20%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(195, 0, 7, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(209, 1, 7, 0.15) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -1267,7 +1267,7 @@ img {
 .page-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(26,26,46,0.9) 0%, rgba(26,26,46,0.5) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0,0.9) 0%, rgba(0, 0, 0,0.5) 100%);
 }
 
 .page-hero__content {
@@ -1504,7 +1504,7 @@ img {
 .contact-card__icon {
     width: 48px;
     height: 48px;
-    background: rgba(195, 0, 7, 0.1);
+    background: rgba(209, 1, 7, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;

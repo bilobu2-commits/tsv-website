@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    TEAM PAGES - Specific Styles
    ============================================ */
 
@@ -26,8 +26,8 @@
     inset: 0;
     background: linear-gradient(
         180deg,
-        rgba(26, 26, 46, 0.3) 0%,
-        rgba(26, 26, 46, 0.85) 100%
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.85) 100%
     );
 }
 
@@ -234,7 +234,7 @@
 }
 
 .team-info-card__item a {
-    color: var(--neon);
+    color: var(--primary-light);
     font-size: 0.95rem;
 }
 
@@ -294,6 +294,10 @@
     gap: 16px;
 }
 
+.team-gallery__grid--inline {
+    margin-top: 40px;
+}
+
 .team-gallery__item {
     position: relative;
     border-radius: var(--radius);
@@ -312,7 +316,7 @@
 .team-gallery__overlay {
     position: absolute;
     inset: 0;
-    background: rgba(195, 0, 7, 0.6);
+    background: rgba(209, 1, 7, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
