@@ -411,10 +411,6 @@
         grid-template-columns: 1fr;
     }
 
-    .team-content__sidebar {
-        order: -1;
-    }
-
     .team-info-card {
         display: inline-block;
         width: 100%;
