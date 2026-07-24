@@ -1,9 +1,8 @@
 name: Herren-1-Tabelle aktualisieren
 
+# Kein automatischer Zeitplan - die Tabelle muss nicht live sein.
+# Über den "Run workflow"-Button im Actions-Tab manuell auslösen, wenn sie aktualisiert werden soll.
 on:
-  schedule:
-    # täglich 05:00 und 17:00 UTC (06:00/07:00 und 18:00/19:00 MEZ/MESZ)
-    - cron: '0 5,17 * * *'
   workflow_dispatch: {}
 
 permissions:

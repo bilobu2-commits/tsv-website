@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    TSV Volleyball Neutraubling - Modern Styles
    Farben: Rot (#d10107, aus dem TSV-Logo) | Weiss | Schwarz
    ============================================ */
@@ -14,10 +14,8 @@
     --primary: #d10107;
     --primary-dark: #a30106;
     --primary-light: #ff1f28;
-    --neon: #000000;
-    --neon-dark: #262626;
-    --dark: #000000;
-    --dark-light: #1a1a1a;
+    --dark: #121212;
+    --dark-light: #1e1e1e;
     --gray-100: #f8f9fa;
     --gray-200: #e9ecef;
     --gray-300: #dee2e6;
@@ -45,9 +43,9 @@
 }
 
 html[data-theme="dark"] {
-    --surface: #0d0d0d;
-    --surface-alt: #161616;
-    --surface-card: #1c1c1c;
+    --surface: #121212;
+    --surface-alt: #1b1b1b;
+    --surface-card: #212121;
     --text-heading: #ffffff;
     --text-body: #d4d4d4;
     --text-muted: #9a9a9a;
@@ -128,20 +126,6 @@ img {
     box-shadow: 0 6px 20px rgba(209, 1, 7, 0.35);
 }
 
-.btn--neon {
-    background: var(--neon);
-    color: var(--white);
-    border-color: var(--neon);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-}
-
-.btn--neon:hover {
-    background: var(--neon-dark);
-    border-color: var(--neon-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
-}
-
 .btn--outline {
     background: transparent;
     color: var(--white);
@@ -205,7 +189,7 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(18, 18, 18, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -213,7 +197,7 @@ img {
 }
 
 .header.scrolled {
-    background: rgba(0, 0, 0, 0.98);
+    background: rgba(18, 18, 18, 0.98);
     box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
@@ -490,7 +474,7 @@ img {
 
 .theme-toggle:hover {
     color: var(--white);
-    background: var(--neon);
+    background: var(--primary);
 }
 
 /* ============================================
@@ -518,8 +502,8 @@ img {
     inset: 0;
     background: linear-gradient(
         135deg,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.4) 50%,
+        rgba(18, 18, 18, 0.85) 0%,
+        rgba(18, 18, 18, 0.4) 50%,
         rgba(209, 1, 7, 0.3) 100%
     );
 }
@@ -747,11 +731,6 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
-    align-items: start;
-}
-
-.team-card:nth-child(even) {
-    margin-top: 32px;
 }
 
 .team-card {
@@ -812,6 +791,7 @@ img {
     font-weight: 600;
     margin-bottom: 6px;
     text-transform: uppercase;
+    color: var(--white);
 }
 
 .team-card__league {
@@ -1267,7 +1247,7 @@ img {
 .page-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0,0.9) 0%, rgba(0, 0, 0,0.5) 100%);
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.5) 100%);
 }
 
 .page-hero__content {

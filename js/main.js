@@ -3,8 +3,11 @@
  * Slider, Navigation, Header-Effekte
  */
 
-// Theme so früh wie möglich anwenden (vor DOMContentLoaded), um Flackern zu minimieren
-if (localStorage.getItem('tsv-theme') === 'dark') {
+// Theme so früh wie möglich anwenden (vor DOMContentLoaded), um Flackern zu minimieren.
+// Ohne gespeicherte Wahl gilt das Farbschema des Betriebssystems/Browsers als Default.
+const storedTheme = localStorage.getItem('tsv-theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
     document.documentElement.setAttribute('data-theme', 'dark');
 }
 
